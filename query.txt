@@ -1,0 +1,6 @@
+-- Query 1 (Return global temperature with year)
+SELECT * FROM global_data
+-- Query 2 (Return Abu Dhabi temperature with year)
+SELECT c.year, c.avg_temp, 0 AS abu_dhabi_avg_temp
+FROM city_data AS c
+WHERE c.city = 'Abu Dhabi'
